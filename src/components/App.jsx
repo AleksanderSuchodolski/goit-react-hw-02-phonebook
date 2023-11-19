@@ -16,6 +16,7 @@ export class App extends Component {
     ],
     filter: '',
   };
+
   onSubmitForm = data => {
     const obj = { ...data, id: nanoid() };
     this.setState(({ contacts }) => {
